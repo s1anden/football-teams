@@ -1,0 +1,39 @@
+<!Doctype HTML>
+<html>
+<head>
+	<title>Football Teams</title>
+</head>
+
+<body>
+	<h1>Football Teams</h1>
+	<div>
+	  <form name="addteamsform" action="javascript:addTeam()">
+	    <div class="row">
+	      <label>Team:</label>  <input id="teamname-input" name="Team" type="text" placeholder="e.g. Steelers"/> 
+	    </div>
+	    <div class="row">
+	      <label>City:</label>  <input id="city-input" name="City" type="text" placeholder="e.g. Pittsburgh"/>
+	    </div>
+	    <div class="row right">
+	      <input id="submitButton" name="Submit"  type="submit" value="Add Team"/>
+	    </div>
+	  </form>
+	</div> 
+	<br>
+	<div>
+	  <form name="addplayersform" action="javascript:addPlayer()">
+	    <div class="row">
+	      <label>Player Name:</label>  <input id="playername-input" name="Player" type="text" placeholder="e.g. Ryan Kwok"/> 
+	    </div>
+	    <div class="row">
+	      <label>Team:</label>  <input id="team-input" name="Team" type="text" placeholder="e.g. Steelers"/>
+	    </div>
+	    <div class="row right">
+	      <input id="submitButton" name="Submit"  type="submit" value="Add Player"/>
+	    </div>
+	  </form>
+	</div>
+	<script src="jquery-1.9.0.js"></script>
+	<script src="crud.js"></script>
+</body>
+</html>
